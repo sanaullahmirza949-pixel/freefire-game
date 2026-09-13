@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Free Fire - Battle Royale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="splashScreen" class="splash-screen">
+        <div class="splash-content">
+            <h1>🔥 FREE FIRE 🔥</h1>
+            <p>Battle Royale</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="ui">
+        <div id="health-bar">
+            <div id="health-fill"></div>
+            <span id="health-text">100/100</span>
+        </div>
+        <div id="ammo-count">Ammo: 30</div>
+        <div id="inventory">
+            <div class="weapon active" data-weapon="m4a1">M4A1</div>
+            <div class="weapon" data-weapon="awm">AWM</div>
+            <div class="weapon" data-weapon="shotgun">Shotgun</div>
+            <div class="weapon" data-weapon="pistol">Pistol</div>
+        </div>
+        <div id="game-info">
+            <span id="players-left">Players Left: 50</span>
+            <span id="zone-timer">Zone: Phase 1</span>
+        </div>
+        <div id="kill-feed"></div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
